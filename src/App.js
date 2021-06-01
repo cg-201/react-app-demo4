@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       {/** NAVIGATION LOGIC */}
-      <Navbar bg="dark" expand="lg" variant="dark" className="justify-between">
+      <Navbar bg="dark" expand="lg" variant="dark">
         <Link to="/">
           <Navbar.Brand href="#home">Project Book</Navbar.Brand>
         </Link>
