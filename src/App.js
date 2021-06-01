@@ -19,25 +19,25 @@ function App() {
     <Router>
       {/** NAVIGATION LOGIC */}
       <Navbar bg="dark" expand="lg" variant="dark">
-        <Link to="/">
-          <Navbar.Brand href="#home">Project Book</Navbar.Brand>
-        </Link>
+        <Navbar.Brand as={Link} to="/">
+          Project Book
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Link to="/page1">
-              <Nav.Link href="#home">Page1</Nav.Link>
-            </Link>
+          <Nav className="ml-auto">
+            <Nav.Link as={Link} to="/page1">
+              Page1
+            </Nav.Link>
 
-            <Link to="/page2">
-              <Nav.Link href="#link">Page2</Nav.Link>
-            </Link>
+            <Nav.Link as={Link} to="/page2">
+              Page2
+            </Nav.Link>
 
-            <Link to="/page3">
-              <Nav.Link href="#link">Page3</Nav.Link>
-            </Link>
+            <Nav.Link as={Link} to="/page3">
+              Page3
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
