@@ -5,10 +5,16 @@ import { Page2 } from "./pages/Page2";
 import { Page3 } from "./pages/Page3";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 
 function App() {
   return (
     <Router>
+      {/** NAVIGATION LOGIC */}
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">Project Book</Navbar.Brand>
+      </Navbar>
+
       <Switch>
         <Route path="/page1">
           <Page1 />
